@@ -12,8 +12,8 @@
         <toc-element topic="Datenexport-aus-ZMI.md"/>
         <toc-element topic="Jahrgangstabelle.md"/>
         <toc-element topic="Faktoren.md"/>
-        <toc-element topic="Damengauschießen.md"/>
-        <toc-element topic="Gaujugendschießen.md"/>
-        <toc-element topic="Gauschießen.md"/>
+        <toc-element topic="Damengauschiessen.md"/>
+        <toc-element topic="Gaujugendschiessen.md"/>
+        <toc-element topic="Gauschiessen.md"/>
     </toc-element>
 </instance-profile>
