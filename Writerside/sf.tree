@@ -4,9 +4,9 @@
 
 <instance-profile id="sf"
                  name="Schützengau Fürth"
-                 start-page="Übersicht.md">
+                 start-page="Uebersicht.md">
 
-    <toc-element topic="Übersicht.md">
+    <toc-element topic="Uebersicht.md">
     </toc-element>
     <toc-element topic="Preisschiessen.md">
         <toc-element topic="Datenexport-aus-ZMI.md"/>
