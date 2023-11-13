@@ -65,6 +65,6 @@ jobs:
           port: 22
           sftp_only: true
           local_path: './dir/*'
-          remote_path: './doc'
+          remote_path: ${{vars.TARGET_PATH}}
           delete_remote_files: true
           sftpArgs: '-o ConnectTimeout=5'
