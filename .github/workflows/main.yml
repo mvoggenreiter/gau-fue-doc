@@ -36,3 +36,32 @@ jobs:
           name: artifact
           path: artifacts/${{ env.ARTIFACT }}
           retention-days: 7
+
+  deploy:
+    environment:
+      name: gau-fuerth.de-sftp
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Requires test job results
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: docs
+
+      - name: Unzip artifact
+        uses: montudor/action-zip@v1
+        with:
+          args: unzip -qq ${{ env.ARTIFACT }} -d dir
+
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{secrets.SFTP_USER}}
+          server: ${{env.SFTP_SERVER}}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          local_path: './dir/*'
+          remote_path: 'doc'
+          sftpArgs: '-o ConnectTimeout=5'
