@@ -2,9 +2,9 @@ name: Build documentation
 
 on:
   push:
-  # To trigger the workflow once you push to the `main` branch
-  # Replace `main` with your branch’s name
-    branches: ["main"]
+    # To trigger the workflow once you push to the `main` branch
+    # Replace `main` with your branch’s name
+    branches: [ "main" ]
   # Specify to run a workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
@@ -22,14 +22,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v4
         with:
           instance: ${{ env.INSTANCE }}
           artifact: ${{ env.ARTIFACT }}
           docker-version: ${{ env.DOCKER_VERSION }}
-      
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
@@ -60,7 +60,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: ${{secrets.SFTP_USER}}
-          server: ${{env.SFTP_SERVER}}
+          server: ${{vars.SFTP_SERVER}}
           password: ${{ secrets.SFTP_PASSWORD }}
           local_path: './dir/*'
           remote_path: 'doc'
