@@ -67,4 +67,4 @@ jobs:
           local_path: './dir/*'
           remote_path: ${{vars.TARGET_PATH}}
           delete_remote_files: false
-          sftpArgs: '-o ConnectTimeout=5 -vvv'
+          sftpArgs: '-o ConnectTimeout=5'
