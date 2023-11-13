@@ -40,7 +40,7 @@ jobs:
   deploy:
     environment:
       name: gau-fuerth.de-sftp
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ vars.TARGET_URL }}
     # Requires test job results
     needs: build
     runs-on: ubuntu-latest
