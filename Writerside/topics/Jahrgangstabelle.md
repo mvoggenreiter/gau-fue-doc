@@ -14,7 +14,7 @@ Für Preisschießen wird das Alter mit dem laufenden Jahr (nicht das Sportjahr) 
 | Senioren          | 51-     |
 | Senioren Aufleger | 51-     |
 
-## Beispiel
+## Beispielberechnung
 
 Zeitraum des Preisschießens: 10.05.2023 - 20.05.2023<br/>
 Geburtsdatum des Schützen: 03.02.2008<br/>
