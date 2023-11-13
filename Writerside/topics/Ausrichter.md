@@ -4,7 +4,7 @@ Das Damengauschießen wird seit 2022 rollierend in alphabetisch absteigender Rei
 
 | Jahr | Verein                                       | Teilnehmer |
 |------|----------------------------------------------|------------|
-| 2022 | KPSG Zirndorf                                |            |
+| 2022 | KPSG Zirndorf                                | 66         |
 | 2023 | KPSG Cadolzburg (getauscht mit ASG Zirndorf) |            |
 | 2024 | SSV Wintersdorf                              |            |
 | 2025 | SV Tell Wilhermsdorf                         |            |
