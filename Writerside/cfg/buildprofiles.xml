@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-    <variables></variables>
-    <build-profile instance="hi">
+    <variables>
+        <header-logo>gau-logo.png</header-logo>
+        <color-preset>Soft</color-preset>
+        <primary-color>forest</primary-color>
+    </variables>
+    <build-profile instance="sf">
         <variables>
             <noindex-content>true</noindex-content>
+
         </variables>
+        <footer>
+            <copyright>Schützengau Fürth © 2023</copyright>
+            <link href="https://www.msb-wil.de">Homepage</link>
+        </footer>
     </build-profile>
 
 </buildprofiles>
