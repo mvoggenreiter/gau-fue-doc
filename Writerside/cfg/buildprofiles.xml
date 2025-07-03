@@ -9,11 +9,10 @@
     <build-profile instance="sf">
         <variables>
             <noindex-content>true</noindex-content>
-
         </variables>
     </build-profile>
     <footer>
-        <copyright>Schützengau Fürth 2023</copyright>
+        <copyright>Schützengau Fürth 2025</copyright>
         <link href="https://www.msb-wil.de">Homepage</link>
     </footer>
 </buildprofiles>
